@@ -8,7 +8,7 @@ class MenuController {
 
 
     def json = {
-        render MenuItem.findByMenu(Menu.findByCategoryName(params.id)) as JSON
+        render MenuItem.findAllByMenu(Menu.findByCategoryName(params.id)) as JSON
     }
 
 }

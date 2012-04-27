@@ -14,4 +14,8 @@ class MenuItem {
 
     String imageUrl;
 
+    String toString(){
+        return name;
+    }
+
 }
